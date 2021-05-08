@@ -1,4 +1,4 @@
-                                                                                                       lllnnnSteps to run the script:
+Steps to run the script:
 
 1) Start the program and a window shall open 
 
@@ -7,7 +7,7 @@
 3) To bookmark any link type it in text box BookMark and click on Add to save it in a file 
    bookmarksdb.txt for future reference
 
-4) the pickle file acting as the db shall be present in the same folder as of this file.
+4) he pickle file acting as the db shall be present in the same folder as of this file.
 
 How the script is made :
 
@@ -17,3 +17,5 @@ How the script is made :
    separately and uses there processed information to customize the output.
 
 3) For Bookmarks Simple File processing has been done.
+
+Test_run filr has links which satisfies all the API  requirements for offset andnum_results 

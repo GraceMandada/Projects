@@ -4,7 +4,7 @@ import math
 from pygame import mixer
 import time
 
-# import sched
+
 
 # game constants
 WIDTH = 800
@@ -213,18 +213,8 @@ def level_up():
     level += 1
     life += 1       # grant a life
     difficulty = 1  # reset difficulty
-    # TODO: change player and bullet speeds, enemy laser speed and firing probability wrt level
-    #  come up with interesting gameplay ideas.
-    #  variables in hand:
-    #  1. speed of weapons
-    #  2. enemy (up to 6) & player velocity
-    #  3. laser firing probability
-    #  future ideas:
-    #  1. add new type of enemies
-    #  2. add new player spaceship and bullets!
-    #  future features:
-    #  1. create player profile ad store highest score to DB
-    #  2. multiplayer
+    
+
     if level % 3 == 0:
         player.dx += 1
         bullet.dy += 1

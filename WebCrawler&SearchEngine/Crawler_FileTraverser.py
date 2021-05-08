@@ -1,5 +1,4 @@
-
-
+from bs4 import BeautifulSoup
 import requests
 import requests.exceptions
 from urllib.parse import urlsplit
@@ -14,7 +13,6 @@ import urllib
 import json
 import pickle
 import time
-import bs4
 
 def crawler(domain, ofile, mute):
     try:
@@ -68,7 +66,7 @@ def crawler(domain, ofile, mute):
             path = url[:url.rfind('/')+1] if '/' in parts.path else url
 
             # create a beutiful soup for the html document
-            soup = BeautifulSoup4(response.text, "lxml")
+            soup = BeautifulSoup(response.text, "lxml")
 
             for link in soup.find_all('a'):
                 # extract link url from the anchor
@@ -109,7 +107,7 @@ def crawler(domain, ofile, mute):
         path = url[:url.rfind('/')+1] if '/' in parts.path else url
 
         # create a beutiful soup for the html document
-        soup =  BeautifulSoup(response.text, "lxml")
+        soup = BeautifulSoup(response.text, "lxml")
 
         for link in soup.find_all('a'):
             # extract link url from the anchor

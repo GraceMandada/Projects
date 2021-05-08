@@ -1,0 +1,6 @@
+newhaven.edu/search/?q=academics
+academics
+http://newhaven.edu/search/?q=undergraduate-%20programs
+http://newhaven.edu/search/?q=undergraduate-%20programs&num_results=10
+http://newhaven.edu/search/?q=undergraduate-%20programs&offset=20
+http://newhaven.edu/search/?q=undergraduate-%20programs&ofset=20&num_results=3
